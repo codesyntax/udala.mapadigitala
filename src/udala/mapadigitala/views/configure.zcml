@@ -9,11 +9,21 @@
 
   <browser:page
       name="view"
-      for="..content.digital_map.IDigitalMapView"
+      for="..content.digital_map.IDigitalMap"
       class=".digital_map_view.DigitalMapView"
       template="digital_map_view.pt"
       permission="zope2.View"
-      layer="udala.mapadigitala.interfaces.IUdalaMapadigitalaLayer"
+      layer="udala.mapadigitala.interfaces.IBrowserLayer"
       />
+
+  <browser:page
+      name="iframe-view"
+      for="..content.digital_map.IDigitalMap"
+      class=".digital_map_view.DigitalMapView"
+      template="digital_map_iframe_view.pt"
+      permission="zope2.View"
+      layer="udala.mapadigitala.interfaces.IBrowserLayer"
+      />
+
 
 </configure>

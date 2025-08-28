@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en"
+>
+
+  <head>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+
+  </head><body>
+
+    <geoeuskadi-map class="mapa_component"
+                    id="Mi-Mapa"
+                    height="100%"
+                    lang="EU"
+                    width="100%"
+                    xmax="564360"
+                    xmin="555884"
+                    xml:lang="EU"
+                    ymax="4772585"
+                    ymin="4785736"
+                    zoom="12"
+    >
+      <geoeuskadi-header logo_url="https://www.azpeitia.eus/"
+                         name="geoAzpeitia"
+                         name_eus="geoAzpeitia"
+                         tal:attributes="
+                           name context/service_name;
+                           name_eus context/service_name;
+                         "
+      >
+      </geoeuskadi-header>
+      <geoeuskadi-widgets mode="only">
+        <tal:widget repeat="widget context/shown_widgets">
+          <geoeuskadi-widget id="CapasBase"
+                             tal:attributes="
+                               id widget;
+                             "
+          ></geoeuskadi-widget>
+        </tal:widget>
+      </geoeuskadi-widgets>
+      <geoeuskadi-layers mode="only">
+        <geoeuskadi-layer id="Ingurua"
+                          checked="checked"
+                          label="Boundary"
+                          remove=""
+                          src="https://www.azpeitia.eus/azpeitia.kml"
+                          type="KML"
+                          tal:attributes="
+                            src string:${context/absolute_url}/@@download/bounding_xml;
+                          "
+                          i18n:attributes="label"
+        ></geoeuskadi-layer>
+        <tal:layer repeat="layer context/shown_layers">
+          <geoeuskadi-layer id="CapasBase"
+                            tal:attributes="
+                              id layer;
+                            "
+          ></geoeuskadi-layer>
+        </tal:layer>
+      </geoeuskadi-layers>
+    </geoeuskadi-map>
+    <script src="https://www.geo.euskadi.eus/bisorea/web-component/config/geoEuskadi.js"
+            type="text/javascript"
+    ></script>
+
+  </body></html>
