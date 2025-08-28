@@ -9,7 +9,7 @@ from plone.supermodel import model
 from zope import schema
 from zope.interface import implementer
 
-
+from plone.namedfile.field import NamedBlobFile
 from udala.mapadigitala import _
 
 
@@ -53,11 +53,17 @@ class IDigitalMap(model.Schema):
             vocabulary="udala.mapadigitala.layers",
         ),
         required=False,
-        default=set([
-            'Folder',
-            'Image',
-        ]),
+        default=[],
         # defaultFactory=get_default_shown_layers,
+        readonly=False,
+    )
+
+    # Make sure you add import: from plone.namedfile.field import NamedBlobFile
+    bounding_xml = NamedBlobFile(
+        title=_(
+            'Upload the XML file that represents the sorrounding towns, in order to show them grayed',
+        ),
+        required=False,
         readonly=False,
     )
 
