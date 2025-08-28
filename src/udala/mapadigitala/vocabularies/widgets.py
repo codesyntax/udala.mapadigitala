@@ -25,12 +25,39 @@ class Widgets(object):
         # Just an example list of content for our vocabulary,
         # this can be any static or dynamic data, a catalog result for example.
         items = [
-            VocabItem(u'sony-a7r-iii', _(u'Sony Aplha 7R III')),
-            VocabItem(u'canon-5d-iv', _(u'Canon 5D IV')),
+            VocabItem("Measure", "Measure"),
+            VocabItem("CapasBase", "CapasBase"),
+            VocabItem("LayerList", "LayerList"),
+            VocabItem("SearchGroup", "SearchGroup"),
+            VocabItem("eDraw", "eDraw"),
+            VocabItem("ElevationProfile", "ElevationProfile"),
+            VocabItem("Print", "Print"),
+            VocabItem("Share", "Share"),
+            VocabItem("ZoomSlider", "ZoomSlider"),
+            VocabItem("MyLocation", "MyLocation"),
+            VocabItem("FullScreen", "FullScreen"),
+            VocabItem("widgets_2D_3D", "widgets_2D_3D"),
+            VocabItem("StreetViewButton", "StreetViewButton"),
+            VocabItem("Zoominfo", "Zoominfo"),
+            VocabItem("HomeButton", "HomeButton"),
+            VocabItem("SearchNora", "SearchNora"),
+            VocabItem("SwipeBasemap", "SwipeBasemap"),
+            VocabItem("CleanMap", "CleanMap"),
+            VocabItem("ObtenerCota", "ObtenerCota"),
+            VocabItem("MarcarPunto", "MarcarPunto"),
+            VocabItem("Transparency", "Transparency"),
+            VocabItem("verviewMap", "verviewMap"),
+            VocabItem("more_icon", "more_icon"),
+            VocabItem("DescargaCartografia", "DescargaCartografia"),
+            VocabItem("DescargaMapaComoImagen", "DescargaMapaComoImagen"),
+            VocabItem("pixels2", "pixels2"),
+            VocabItem("eBookmark", "eBookmark"),
+            VocabItem("NoInfo", "NoInfo"),
+            VocabItem("Help", "Help"),
+            VocabItem("shortcuts", "shortcuts"),
+            VocabItem("FotoVuelo", "FotoVuelo"),
         ]
 
-        # Fix context if you are using the vocabulary in DataGridField.
-        # See https://github.com/collective/collective.z3cform.datagridfield/issues/31:  # NOQA: 501
         if not IDexterityContent.providedBy(context):
             req = getRequest()
             context = req.PARENTS[0]
