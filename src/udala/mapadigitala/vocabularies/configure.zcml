@@ -2,4 +2,10 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
+    <utility
+        component=".widgets.WidgetsFactory"
+        name="udala.mapadigitala.Widgets"
+    />
+
+
 </configure>
