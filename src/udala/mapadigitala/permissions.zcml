@@ -6,4 +6,10 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
+    <permission
+        id="udala.mapadigitala.AddDigitalMap"
+        title="udala.mapadigitala: Add DigitalMap"
+    />
+
+
 </configure>
