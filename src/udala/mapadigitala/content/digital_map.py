@@ -1,29 +1,31 @@
-# -*- coding: utf-8 -*-
 # from plone.app.textfield import RichText
 # from plone.autoform import directives
+from plone.app.multilingual.dx.interfaces import ILanguageIndependentField
 from plone.dexterity.content import Item
+from plone.namedfile.field import NamedBlobFile
+
 # from plone.namedfile import field as namedfile
 from plone.supermodel import model
+from udala.mapadigitala import _
+
 # from plone.supermodel.directives import fieldset
 # from z3c.form.browser.radio import RadioFieldWidget
 from zope import schema
+from zope.interface import alsoProvides
 from zope.interface import implementer
-
-from plone.namedfile.field import NamedBlobFile
-from udala.mapadigitala import _
 
 
 class IDigitalMap(model.Schema):
-    """ Marker interface and Dexterity Python Schema for DigitalMap
-    """
+    """Marker interface and Dexterity Python Schema for DigitalMap"""
+
     service_name = schema.TextLine(
         title=_(
-            u'Service name',
+            "Service name",
         ),
         description=_(
-            u'This name will be shown in the upper right corner of the page',
+            "This name will be shown in the upper right corner of the page",
         ),
-        default=u'',
+        default="",
         required=False,
         readonly=False,
     )
@@ -108,13 +110,19 @@ class IDigitalMap(model.Schema):
     # Make sure you add import: from plone.namedfile.field import NamedBlobFile
     bounding_xml = NamedBlobFile(
         title=_(
-            'Upload the XML file that represents the sorrounding towns, in order to show them grayed',
+            "Upload the XML file that represents the sorrounding towns, "
+            "in order to show them grayed",
         ),
         required=False,
         readonly=False,
     )
 
+
+alsoProvides(IDigitalMap["shown_widgets"], ILanguageIndependentField)
+alsoProvides(IDigitalMap["shown_layers"], ILanguageIndependentField)
+alsoProvides(IDigitalMap["bounding_xml"], ILanguageIndependentField)
+
+
 @implementer(IDigitalMap)
 class DigitalMap(Item):
-    """ Content-type class for IDigitalMap
-    """
+    """Content-type class for IDigitalMap"""

@@ -1,25 +1,21 @@
-# -*- coding: utf-8 -*-
-
 # from plone import api
-from zope.schema.interfaces import IVocabularyFactory
-from zope.interface import implementer
-from udala.mapadigitala import _
 from plone.dexterity.interfaces import IDexterityContent
 from zope.globalrequest import getRequest
+from zope.interface import implementer
+from zope.schema.interfaces import IVocabularyFactory
 from zope.schema.vocabulary import SimpleTerm
 from zope.schema.vocabulary import SimpleVocabulary
 
 
-class VocabItem(object):
+class VocabItem:
     def __init__(self, token, value):
         self.token = token
         self.value = value
 
 
 @implementer(IVocabularyFactory)
-class Widgets(object):
-    """
-    """
+class Widgets:
+    """ """
 
     def __call__(self, context):
         # Just an example list of content for our vocabulary,
