@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-08-29 08:42+0000\n"
+"POT-Creation-Date: 2025-09-11 15:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,19 +25,39 @@ msgstr ""
 msgid "Package to configure a new udala.mapadigitala site"
 msgstr ""
 
-#: udala/mapadigitala/content/digital_map.py:77
+#: udala/mapadigitala/content/digital_map.py:79
 msgid "Select available map layers"
 msgstr ""
 
-#: udala/mapadigitala/content/digital_map.py:32
+#: udala/mapadigitala/content/digital_map.py:34
 msgid "Select available widgets"
 msgstr ""
 
-#: udala/mapadigitala/content/digital_map.py:20
+#: udala/mapadigitala/content/digital_map.py:22
 msgid "Service name"
 msgstr ""
 
-#: udala/mapadigitala/content/digital_map.py:23
+#: udala/mapadigitala/content/digital_map.py:154
+msgid "Set the initial zoom level of the map. The zoom levels are from 0 (the whole world) to 20 (the maximum detail)."
+msgstr ""
+
+#: udala/mapadigitala/content/digital_map.py:112
+msgid "Set the maximum X coordinate of the map initial extent. The coordinates must be in UTM format."
+msgstr ""
+
+#: udala/mapadigitala/content/digital_map.py:133
+msgid "Set the maximum Y coordinate of the map initial extent. The coordinates must be in UTM format."
+msgstr ""
+
+#: udala/mapadigitala/content/digital_map.py:123
+msgid "Set the minimum X coordinate of the map initial extent. The coordinates must be in UTM format."
+msgstr ""
+
+#: udala/mapadigitala/content/digital_map.py:143
+msgid "Set the minimum Y coordinate of the map initial extent.The coordinates must be in UTM format."
+msgstr ""
+
+#: udala/mapadigitala/content/digital_map.py:25
 msgid "This name will be shown in the upper right corner of the page"
 msgstr ""
 
@@ -45,8 +65,28 @@ msgstr ""
 msgid "Uninstall udala.mapadigitala setup."
 msgstr ""
 
-#: udala/mapadigitala/content/digital_map.py:110
+#: udala/mapadigitala/content/digital_map.py:165
 msgid "Upload the XML file that represents the sorrounding towns, in order to show them grayed"
+msgstr ""
+
+#: udala/mapadigitala/content/digital_map.py:111
+msgid "X max"
+msgstr ""
+
+#: udala/mapadigitala/content/digital_map.py:122
+msgid "X min"
+msgstr ""
+
+#: udala/mapadigitala/content/digital_map.py:132
+msgid "Y max"
+msgstr ""
+
+#: udala/mapadigitala/content/digital_map.py:142
+msgid "Y min"
+msgstr ""
+
+#: udala/mapadigitala/content/digital_map.py:153
+msgid "Zoom"
 msgstr ""
 
 #: udala/mapadigitala/profiles.zcml:13

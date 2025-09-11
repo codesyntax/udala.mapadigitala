@@ -1,11 +1,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2025-08-29 08:42+0000\n"
+"POT-Creation-Date: 2025-09-11 15:04+0000\n"
 "PO-Revision-Date: 2025-08-29 10:44+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,6 +13,7 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: udala.mapadigitala\n"
+"Language: eu\n"
 "X-Generator: Poedit 3.4.2\n"
 
 #: udala/mapadigitala/profiles/default/types/DigitalMap.xml
@@ -24,19 +24,39 @@ msgstr "Mapa digitala"
 msgid "Package to configure a new udala.mapadigitala site"
 msgstr "udala.mapadigitala konfiguratzeko paketea"
 
-#: udala/mapadigitala/content/digital_map.py:77
+#: udala/mapadigitala/content/digital_map.py:79
 msgid "Select available map layers"
 msgstr "Aukeratu mapak agertuko diren geruzak"
 
-#: udala/mapadigitala/content/digital_map.py:32
+#: udala/mapadigitala/content/digital_map.py:34
 msgid "Select available widgets"
 msgstr "Agertu mapan agertuko diren aukerak"
 
-#: udala/mapadigitala/content/digital_map.py:20
+#: udala/mapadigitala/content/digital_map.py:22
 msgid "Service name"
 msgstr "Zerbitzuaren izena"
 
-#: udala/mapadigitala/content/digital_map.py:23
+#: udala/mapadigitala/content/digital_map.py:154
+msgid "Set the initial zoom level of the map. The zoom levels are from 0 (the whole world) to 20 (the maximum detail)."
+msgstr "Idatzi maparen hasierako zoom maila. Zoom mailak 0-tik (mundu osoa) 20-ra (xehetasun maximoa) bitartekoak dira."
+
+#: udala/mapadigitala/content/digital_map.py:112
+msgid "Set the maximum X coordinate of the map initial extent. The coordinates must be in UTM format."
+msgstr "Idatzi maparen X koordenatu maximoa hasierako ikuspegian. Koordenatuak UTM formatuan egon behar dira."
+
+#: udala/mapadigitala/content/digital_map.py:133
+msgid "Set the maximum Y coordinate of the map initial extent. The coordinates must be in UTM format."
+msgstr "Idatzi maparen Y koordenatu maximoa hasierako ikuspegian. Koordenatuak UTM formatuan egon behar dira."
+
+#: udala/mapadigitala/content/digital_map.py:123
+msgid "Set the minimum X coordinate of the map initial extent. The coordinates must be in UTM format."
+msgstr "Idatzi maparen X koordenatu minimoa hasierako ikuspegian. Koordenatuak UTM formatuan egon behar dira."
+
+#: udala/mapadigitala/content/digital_map.py:143
+msgid "Set the minimum Y coordinate of the map initial extent.The coordinates must be in UTM format."
+msgstr "Idatzi maparen Y koordenatu minimoa hasierako ikuspegian. Koordenatuak UTM formatuan egon behar dira."
+
+#: udala/mapadigitala/content/digital_map.py:25
 msgid "This name will be shown in the upper right corner of the page"
 msgstr "Izen hau, maparen goiko eskumako aldean agertuko da, geoEuskadi logoaren ondoan"
 
@@ -44,9 +64,29 @@ msgstr "Izen hau, maparen goiko eskumako aldean agertuko da, geoEuskadi logoaren
 msgid "Uninstall udala.mapadigitala setup."
 msgstr "udala.mapadigitala desinstalatu"
 
-#: udala/mapadigitala/content/digital_map.py:110
+#: udala/mapadigitala/content/digital_map.py:165
 msgid "Upload the XML file that represents the sorrounding towns, in order to show them grayed"
 msgstr "Kargatu inguruko herriak errepresentatzen dituen XML fitxategia, horrela inguruko herri horiek ilunduta agertuko dira."
+
+#: udala/mapadigitala/content/digital_map.py:111
+msgid "X max"
+msgstr "X max"
+
+#: udala/mapadigitala/content/digital_map.py:122
+msgid "X min"
+msgstr "X min"
+
+#: udala/mapadigitala/content/digital_map.py:132
+msgid "Y max"
+msgstr "Y max"
+
+#: udala/mapadigitala/content/digital_map.py:142
+msgid "Y min"
+msgstr "Y min"
+
+#: udala/mapadigitala/content/digital_map.py:153
+msgid "Zoom"
+msgstr "Zooma"
 
 #: udala/mapadigitala/profiles.zcml:13
 msgid "udala.mapadigitala: Install"

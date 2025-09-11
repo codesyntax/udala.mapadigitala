@@ -2,7 +2,7 @@
 from Products.Five.browser import BrowserView
 from zope.interface import implementer
 from zope.interface import Interface
-
+from Products.CMFPlone.utils import getSiteLogo
 
 # from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
@@ -20,3 +20,6 @@ class DigitalMapView(BrowserView):
     def __call__(self):
         # Implement your own actions:
         return self.index()
+
+    def logo_url(self):
+        return getSiteLogo()

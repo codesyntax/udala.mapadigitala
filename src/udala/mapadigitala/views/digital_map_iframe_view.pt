@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en"
+      lang="${context/Language}"
+      xml:lang="${context/Language}"
 >
 
   <head>
@@ -16,18 +16,16 @@
     <geoeuskadi-map class="mapa_component"
                     id="Mi-Mapa"
                     height="100%"
-                    lang="EU"
                     width="100%"
-                    xmax="564360"
-                    xmin="555884"
-                    xml:lang="EU"
-                    ymax="4772585"
-                    ymin="4785736"
-                    zoom="12"
+                    xmax="${context/xmax}"
+                    xmin="${context/xmin}"
+                    ymax="${context/ymax}"
+                    ymin="${context/ymin}"
+                    zoom="${context/zoom}"
     >
-      <geoeuskadi-header logo_url="https://www.azpeitia.eus/"
-                         name="geoAzpeitia"
-                         name_eus="geoAzpeitia"
+      <geoeuskadi-header logo_url="${view/logo_url}"
+                         name="geoUdala"
+                         name_eus="geoUdala"
                          tal:attributes="
                            name context/service_name;
                            name_eus context/service_name;
