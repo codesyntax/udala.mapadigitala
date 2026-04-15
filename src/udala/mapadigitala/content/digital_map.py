@@ -110,7 +110,7 @@ class IDigitalMap(model.Schema):
     xmax = schema.Int(
         title=_("X max"),
         description=_(
-            "Set the maximum X coordinate of the map initial extent. " \
+            "Set the maximum X coordinate of the map initial extent. "
             "The coordinates must be in UTM format.",
         ),
         default=564360,
@@ -121,7 +121,7 @@ class IDigitalMap(model.Schema):
     xmin = schema.Int(
         title=_("X min"),
         description=_(
-            "Set the minimum X coordinate of the map initial extent. " \
+            "Set the minimum X coordinate of the map initial extent. "
             "The coordinates must be in UTM format.",
         ),
         default=555884,
@@ -131,7 +131,7 @@ class IDigitalMap(model.Schema):
     ymax = schema.Int(
         title=_("Y max"),
         description=_(
-            "Set the maximum Y coordinate of the map initial extent. " \
+            "Set the maximum Y coordinate of the map initial extent. "
             "The coordinates must be in UTM format.",
         ),
         default=4772585,
@@ -141,7 +141,7 @@ class IDigitalMap(model.Schema):
     ymin = schema.Int(
         title=_("Y min"),
         description=_(
-            "Set the minimum Y coordinate of the map initial extent." \
+            "Set the minimum Y coordinate of the map initial extent."
             "The coordinates must be in UTM format.",
         ),
         default=4785736,
@@ -152,7 +152,7 @@ class IDigitalMap(model.Schema):
     zoom = schema.Int(
         title=_("Zoom"),
         description=_(
-            "Set the initial zoom level of the map. " \
+            "Set the initial zoom level of the map. "
             "The zoom levels are from 0 (the whole world) to 20 (the maximum detail).",
         ),
         default=12,
