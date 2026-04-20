@@ -22,7 +22,7 @@ A Plone addon providing specific functionality for UdalPlone projects.
 
 ## Features
 
-- Custom content types and views specific to udala.mapadigitala
+- Provides the `Digital Map` content type for GIS integration
 - RestAPI endpoints
 - Volto-ready backend setup
 
